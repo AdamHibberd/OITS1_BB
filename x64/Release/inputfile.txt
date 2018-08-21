@@ -1,0 +1,52 @@
+SPICE
+% Start of SPICE Setup
+C:/Users/adamh/Documents/SPICE/naif0012.tls		% Leap Second File for SPICE				[String]
+C:/Users/adamh/Documents/SPICE/de430.bsp		% SPICE Kernel File #1
+END
+% End of SPICE Setup
+
+TRAJ
+% Start of General Trajectory Data
+EXAMPLE		% Name of Mission 							[String]
+7			% Total Number of Bodies 						[Int]
+No			% Flyby(=No) Rendezvous(=Yes) of Eventual Target Planet[String]
+Yes			% Prograde Transfers Only (=Yes Recommended)		[String]
+			% Maximum Mission Duration (Optional) (Years) 		[Double]
+END
+% End of General Trajectory Data
+
+BODY
+% Start of List for Body Data 
+1			% Body 1 									[Int]
+3			% SPICE ID String for Body 1 					[String]
+200			% Minimum Periapsis Altitude for Body 1 (km) 		[Double]
+2			% Body 2 									[Int]
+3			% SPICE ID String for Body 2 					[String]
+200			% Minimum Periapsis Altitude for Body 2 (km) 		[Double]
+3			% Body 3 									[Int]
+2			% SPICE ID String for Body 3 					[String]
+200			% Minimum Periapsis Altitude for Body 3 (km) 		[Double]
+4			% Body 4 									[Int]
+3			% ID for Intermediate Point (Deep Space Manoeuvre) 	[String]
+200			% Distance of DSM from Centre of Ecliptic (AU) 		[Double]
+5			% Body 5 									[Int]
+4			% SPICE ID String for Body 5 					[String]
+200			% Minimum Periapsis Altitude for Body 5 (km) 		[Double]
+6
+3
+200
+7
+5
+200
+END
+% End of list for Body Data
+
+TRANS
+% Start of List for Transfer Data (optional)
+			% Transfer in question						[Int]
+			% Minimum Perihelion Distance for this Transfer (AU) 	[Double]
+ 			% This is orbital parameter (not achieved)(Optional) [String]
+
+END
+% End of List for Transfer Data
+

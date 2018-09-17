@@ -4,7 +4,7 @@
 #include <string>
 #include <fstream>
 #include <sstream>
-#include <C:\Users\adamh\Documents\SPICE\cspice\include\SpiceUsr.h>
+#include <..\SPICE\cspice\include\SpiceUsr.h>
 #include "Mission.h"
 
 class Project

@@ -76,13 +76,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\Adam\Documents\C++\EIGEN;C:\Users\Adam\Documents\C++\cspice\include;C:\Users\Adam\Documents\C++\cspice\lib\cspice.lib;</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;C:\Users\Adam\Documents\C++\cspice\lib\cspice.lib;</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\EIGEN;..\SPICE\cspice\include;..\SPICE\cspice\lib\cspice.lib;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;..\SPICE\cspice\lib\cspice.lib;</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\Adam\Documents\C++\EIGEN;C:\Users\Adam\Documents\C++\cspice\include;</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;C:\Users\Adam\Documents\C++\cspice\lib\cspice.lib;</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\EIGEN;..\SPICE\cspice\include;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;..\SPICE\cspice\lib\cspice.lib;</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -112,13 +112,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\adamh\Documents\EIGEN;C:\Users\adamh\Documents\SPICE\cspice\;C:\Users\adamh\Documents\nomad.3.8.1\builds\VisualStudio\src_sgtelib\;C:\Users\adamh\Documents\nomad.3.8.1\builds\VisualStudio\src\;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\EIGEN;..\SPICE\cspice\;C:\Users\adamh\Documents\nomad.3.8.1\builds\VisualStudio\src_sgtelib\;C:\Users\adamh\Documents\nomad.3.8.1\builds\VisualStudio\src\;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\adamh\Documents\SPICE\cspice\lib;C:\Users\adamh\Documents\nomad.3.8.1\builds\VisualStudio\bin;C:\Users\adamh\Documents\nomad.3.8.1\builds\VisualStudio\src_sgtelib;</AdditionalLibraryDirectories>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);C:\Users\adamh\Documents\SPICE\cspice\lib\cspice.lib;C:\Users\adamh\Documents\nomad.3.8.1\builds\VisualStudio\x64\debug\nomad.lib;C:\Users\adamh\Documents\nomad.3.8.1\builds\VisualStudio\x64\debug\sgtelib.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\SPICE\cspice\lib;C:\Users\adamh\Documents\nomad.3.8.1\builds\VisualStudio\bin;C:\Users\adamh\Documents\nomad.3.8.1\builds\VisualStudio\src_sgtelib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);..\SPICE\cspice\lib\cspice.lib;C:\Users\adamh\Documents\nomad.3.8.1\builds\VisualStudio\x64\debug\nomad.lib;C:\Users\adamh\Documents\nomad.3.8.1\builds\VisualStudio\x64\debug\sgtelib.lib;</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
@@ -148,7 +148,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\adamh\Documents\EIGEN;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\EIGEN;</AdditionalIncludeDirectories>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
